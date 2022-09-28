@@ -41,6 +41,7 @@ export async function getTodos() {
 
 export async function completeTodo(id) {
     // > Part C: call update (set complete to true) for the todo that
+    return await client.from('todos').update({ complete: true }).eq('id', id).single();
     // matches the correct id. Returns a single record:
 }
 
