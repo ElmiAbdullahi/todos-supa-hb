@@ -35,7 +35,7 @@ window.addEventListener('load', async () => {
         displayError();
     }
     if (todos) {
-        displayTodos;
+        displayTodos();
     }
     //      - otherwise, display the todos
 });
